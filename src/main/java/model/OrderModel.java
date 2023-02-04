@@ -4,7 +4,7 @@ import lombok.Builder;
 import lombok.Data;
 @Builder
 @Data
-public class Order {
+public class OrderModel {
     private final String firstName;
     private final String lastName;
     private final String address;

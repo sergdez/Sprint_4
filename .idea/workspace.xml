@@ -4,14 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05b1e1d9-fa4e-4ec9-b151-8c4d7b1f7e67" name="Changes" comment="" />
+    <list default="true" id="05b1e1d9-fa4e-4ec9-b151-8c4d7b1f7e67" name="Changes" comment="Проект 4 спринта">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helpers/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helpers/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helpers/DriverFactoryHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helpers/DriverFactoryHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helpers/OrderButtonEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helpers/OrderButtonEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/OrderModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/OrderModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobject/ConfirmationPopupPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobject/ConfirmationPopupPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobject/OrderPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobject/OrderPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobject/PageObjectBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobject/PageObjectBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobject/QuestionPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobject/QuestionPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobject/SuccessOrderPopupPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobject/SuccessOrderPopupPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/practicum/yandex/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/practicum/yandex/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/OrderSectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/OrderSectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/QuestionSectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/QuestionSectionTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -21,7 +46,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2LGx4nSrPA80bfP0wPz1fR0rt1R" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,9 +56,43 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.All in Sprin_4">
+    <configuration name="All in Sprin_4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprin_4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tests in Sprin_4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprin_4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in Sprin_4" />
+        <item itemvalue="JUnit.tests in Sprin_4" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,5 +103,9 @@
       <updated>1675511039169</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Проект 4 спринта" />
+    <option name="LAST_COMMIT_MESSAGE" value="Проект 4 спринта" />
   </component>
 </project>

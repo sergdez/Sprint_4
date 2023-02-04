@@ -1,11 +1,11 @@
-package PageElements;
+package pageobject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import static helpers.Const.WAITING_TIMEOUT;
+import static helpers.Constants.WAITING_TIMEOUT;
 
 public class QuestionPageObject extends PageObjectBase {
     private static final String ACCORDION_HEADING_ID_PART = "accordion__heading-";

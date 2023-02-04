@@ -1,21 +1,21 @@
-package PageElements;
+package pageobject;
 
-import model.Order;
-import helpers.ButtonEnum;
+import model.OrderModel;
+import helpers.OrderButtonEnum;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static helpers.Const.WAITING_TIMEOUT;
+import static helpers.Constants.WAITING_TIMEOUT;
 
 public class OrderPageObject extends PageObjectBase {
     public OrderPageObject(WebDriver driver) {
         super(driver);
     }
 
-    //region Плейсхолдеры элементов первой ('Для кого самокат') и второй ('Про аренду') форм
+    // Плейсхолдеры элементов первой ('Для кого самокат') и второй ('Про аренду') форм
     private static final String FIRSTNAME_FIELD_PLACEHOLDER = "* Имя";
     private static final String LASTNAME_FIELD_PLACEHOLDER = "* Фамилия";
     private static final String ADDRESS_FIELD_PLACEHOLDER = "* Адрес: куда привезти заказ";
@@ -48,14 +48,14 @@ public class OrderPageObject extends PageObjectBase {
             By.xpath(".//div[@class='Order_Buttons__1xGrp']/button[text()='Заказать']");
 
 
-    //region Заголовки первой и второй форм оформления заказа
+    //Заголовки первой и второй форм оформления заказа
     private final By orderHeaderTitle = By.xpath(".//div[@class='Order_Content__bmtHS']/" +
             "div[@class='Order_Header__BZXOb' and text() = 'Для кого самокат']");
     private final By aboutRentTitle =
             By.xpath(".//div[@class='Order_Header__BZXOb' and text()='Про аренду']");
     //endregion
 
-    //region Локаторы элементов формы
+    // Локаторы элементов формы
     private final By firstNameInput = By.xpath(generateFormFieldXPath(FIRSTNAME_FIELD_PLACEHOLDER));
     private final By lastNameInput = By.xpath(generateFormFieldXPath(LASTNAME_FIELD_PLACEHOLDER));
     private final By addressInput = By.xpath(generateFormFieldXPath(ADDRESS_FIELD_PLACEHOLDER));
@@ -123,7 +123,7 @@ public class OrderPageObject extends PageObjectBase {
     }
 
 
-    public void fillFirstPartOrderForm(Order inputData) {
+    public void fillFirstPartOrderForm(OrderModel inputData) {
         driver.findElement(firstNameInput).sendKeys(inputData.getFirstName());
         driver.findElement(lastNameInput).sendKeys(inputData.getLastName());
         driver.findElement(addressInput).sendKeys(inputData.getAddress());
@@ -135,7 +135,7 @@ public class OrderPageObject extends PageObjectBase {
     }
 
 
-    public void fillTheSecondPartOrderForm(Order inputData) {
+    public void fillTheSecondPartOrderForm(OrderModel inputData) {
         driver.findElement(calendarInput).click();
         driver.findElement(By.xpath(".//button[@aria-label='"+inputData.getOrderMonth()+"']")).click();
         driver.findElement(By.xpath(".//div[@role='button' and contains(text(), '"
@@ -165,10 +165,10 @@ public class OrderPageObject extends PageObjectBase {
     }
 
 
-    public void fillTheFirstPartOrderForm(Order inputData, ButtonEnum buttonType) {
+    public void fillTheFirstPartOrderForm(OrderModel inputData, OrderButtonEnum buttonType) {
         clickToCookieButton();
 
-        if (buttonType.equals(ButtonEnum.rentSectionOrderButton)) {
+        if (buttonType.equals(OrderButtonEnum.rentSectionOrderButton)) {
             scrollToHowItWorksOrderButton();
             clickToOrderButtonInHowItWorksSection();
         } else {

@@ -1,6 +1,6 @@
 package helpers;
 
-public enum ButtonEnum {
+public enum OrderButtonEnum {
     headerOrderButton,
     rentSectionOrderButton
 }

@@ -1,14 +1,14 @@
-package PageElements;
+package pageobject;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import static helpers.Const.WAITING_TIMEOUT;
+import static helpers.Constants.WAITING_TIMEOUT;
 
 public class ConfirmationPopupPageObject extends PageObjectBase {
-    public PopupPage(WebDriver driver) {
+    public ConfirmationPopupPageObject(WebDriver driver) {
 
         super(driver);
         PageFactory.initElements(driver, this);
